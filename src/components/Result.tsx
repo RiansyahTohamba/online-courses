@@ -1,1 +1,2 @@
 // useState
+export const Result = () => {}
