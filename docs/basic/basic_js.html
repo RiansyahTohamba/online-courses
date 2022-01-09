@@ -1,4 +1,27 @@
-<html></html>
+<html>
+    <head> Title</head>
+<body>
+    <h3> Js</h3>
+    <pre>
+        figures.map((fig) => {
+            console.log(fig.name)
+        });
+    </pre>
+    <h3> Ruby</h3>
+    <pre>
+        figures.each do |fig| 
+            p fig.name   
+        end 
+    </pre>
+    
+</body>
+</html>
+<ul>
+    <li>figures memiliki tipe array of hash</li>
+    <li>figures has printed using map(lambda) </li>
+    <li>figures has printed using argument which is arrow function / anonymous function </li>
+</ul>
+
 <script>
     let figures = [
 			{ 
@@ -54,7 +77,11 @@
 				mulaikenal: '2016',
 			  	expertise :'Software Development',
 			  	company: 'Google'
-			},
-        ];
-        
+			}
+    ];
+    figures.map((fig) => {
+        console.log(fig.name)
+    });
+    // () => {}
+    
 </script>
