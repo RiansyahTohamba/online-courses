@@ -1,0 +1,35 @@
+<html>
+    <body>
+        <h1>Promise </h1>
+        <p>Promise menghindari Callback Hell </p>
+        <script>
+            function getProductsUrl(keyword){
+                return 'https://61d8315de6744d0017ba89a2.mockapi.io/api/v1/students'
+            }
+            // use Promise
+            function getProducts(keyword){
+
+            }
+
+            // use Callback
+            function getProductsCb(keyword){
+
+            }
+
+            function exampleCallback(){
+                setTimeout(()=>{
+                    // bebas apapun perintahnya
+                    console.log("pakai callback");
+                },0)
+                console.log("tanpa callback")
+            }            
+            
+            
+
+        </script>
+    <!-- proses 1, pengambilan productId, dilakukan secara async. 
+    tidak perlu menunggu proses 1 selesai, proses 2 dan 3 akan dilaksanakan.
+    saat proses 1 sudah selesai, barulah ia "dipanggil kembali" (callback), seolah ia menjadi tahap ke 4. -->
+    
+    </body>
+</html>
