@@ -1,0 +1,52 @@
+<html>
+
+
+
+</html>
+<script>
+    class ReactComponent{
+        
+    }
+    class ReactElement {
+        type = null
+        key = null    
+        props =  {}
+        ref = null
+
+        // propsInstanceObject = () => {
+
+        // }
+        // propsProtopye(){
+
+        // }
+    }
+    /*
+const App = () => (
+    <div className="App">
+    <img src="{logo}" className="App-logo">
+    <h1>App component</h1>
+    </div>
+)
+kode ini akan menghasilkan object dengan props berisi 2 children array
+*/
+    rc = new ReactElement();
+    
+    // props di override disini
+    rc.props = {
+        'className': 'App',
+        'children' : [
+            {
+                '$$typeof': 'Symbol(react.element)',
+                'props': { 'src': 'path/image'},
+                'type' : 'img'
+            },
+            {
+                '$$typeof': 'Symbol(react.element)',
+                'props': { 'children': 'App component'},
+                'type' : 'h1'
+            },
+        ]
+    }
+
+    console.log(rc);
+</script>
