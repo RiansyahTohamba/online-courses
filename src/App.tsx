@@ -37,12 +37,17 @@ const App = () => {
         setLoading(false);
     }
 
-
+    // harus cari cara untuk menguji checkAnswer
+    // harus cari cara untuk menguji DOM 
     const checkAnswer = (e: React.MouseEvent<HTMLButtonElement> ) => {
         if(!gameOver){
+            
             const answer = e.currentTarget.value;
-            // check answer against correct-answer
+            // kenapa (answer = null) ?
+            // karena belum ditambahkan properti value pada DOM button
+            // <button value={answer} >
             const correct = questions[number].correct_answer === answer;
+
             // add score if answer is correct
             if (correct) setScore(prev => prev + 1);
             // save answer in the array for user answers
